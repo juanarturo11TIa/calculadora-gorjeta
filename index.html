@@ -22,18 +22,18 @@
 
                 <div class="input-box">
                     <img src="./images/icon-dollar.svg" alt="icon dollar">
-                    <input type="number" id="bill" placeholder="0">
+                    <input oninput="receiveBillValue()" type="number" id="bill" placeholder="0">
                 </div>
             </div>
 
             <div class="tip">
                 <strong>Select tip %</strong>
                 <div>
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
-                    <button>25%</button>
-                    <button>50%</button>
+                    <button  onclick="receivePercentageValue(5)" id="button-5">5%</button>
+                    <button  onclick="receivePercentageValue(10)"  id="button-10" >10%</button>
+                    <button  onclick="receivePercentageValue(15)" id="button-15">15%</button>
+                    <button  onclick="receivePercentageValue(25)" id="button-25">25%</button>
+                    <button onclick="receivePercentageValue(550)"  id="button-50">50%</button>
                     <input type="number" id="cutom-tip" placeholder="Custom">
                 </div>
             </div>
@@ -43,7 +43,7 @@
 
                 <div class="input-box">
                     <img src="./images/icon-person.svg" alt="incon person">
-                    <input type="number" id="people" placeholder="0">
+                    <input oninput="receivePeopleValue()" type="number" id="numberOfPeople" placeholder="0">
 
                 </div>
             </div>
